@@ -1,0 +1,24 @@
+#root {
+  text-align: center;
+  background-color: #0a0111;
+  color: #fff;
+}
+
+@keyframes background-pan {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.magic-text {
+  background: linear-gradient(to right, #7b53d2, #9b5de5, #f0f0f0, #7b53d2);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 4s linear infinite;
+  white-space: nowrap;
+}
